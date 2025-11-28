@@ -1,0 +1,25 @@
+
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Für Regine</title>
+<style>
+body{font-family:sans-serif;background:#f5efe6;text-align:center;padding-top:50px;}
+.container{max-width:400px;margin:auto;background:white;padding:20px;border-radius:10px;box-shadow:0 0 10px #ccc;}
+input{padding:10px;width:80%;margin:10px;}
+button{padding:10px 20px;}
+</style></head><body>
+<div class="container" id="login">
+<h2>Für Regine</h2>
+<p>Bitte Passwort eingeben:</p>
+<input type="password" id="pw"><br>
+<button onclick="check()">Öffnen</button>
+<p id="msg" style="color:red;"></p>
+</div>
+<script>
+function check(){
+  if(document.getElementById('pw').value === "Regine26"){
+    window.location="calendar.html";
+  } else {
+    document.getElementById('msg').innerText="Falsches Passwort";
+  }
+}
+</script>
+</body></html>

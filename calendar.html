@@ -1,0 +1,50 @@
+
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Adventskalender</title>
+<style>
+body{font-family:sans-serif;background:#f5efe6;text-align:center;}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:20px;}
+.door{background:#8b0000;color:white;padding:20px;border-radius:8px;cursor:pointer;font-size:20px;}
+.door.locked{background:#aaa;cursor:not-allowed;}
+img{max-width:90%;margin-top:20px;}
+</style></head><body>
+<h1>Adventskalender</h1>
+<div class="grid">
+<div class="door" id="d1" onclick="openDoor(1)">1</div>
+<div class="door" id="d2" onclick="openDoor(2)">2</div>
+<div class="door" id="d3" onclick="openDoor(3)">3</div>
+<div class="door" id="d4" onclick="openDoor(4)">4</div>
+<div class="door" id="d5" onclick="openDoor(5)">5</div>
+<div class="door" id="d6" onclick="openDoor(6)">6</div>
+<div class="door" id="d7" onclick="openDoor(7)">7</div>
+<div class="door" id="d8" onclick="openDoor(8)">8</div>
+<div class="door" id="d9" onclick="openDoor(9)">9</div>
+<div class="door" id="d10" onclick="openDoor(10)">10</div>
+<div class="door" id="d11" onclick="openDoor(11)">11</div>
+<div class="door" id="d12" onclick="openDoor(12)">12</div>
+<div class="door" id="d13" onclick="openDoor(13)">13</div>
+<div class="door" id="d14" onclick="openDoor(14)">14</div>
+<div class="door" id="d15" onclick="openDoor(15)">15</div>
+<div class="door" id="d16" onclick="openDoor(16)">16</div>
+<div class="door" id="d17" onclick="openDoor(17)">17</div>
+<div class="door" id="d18" onclick="openDoor(18)">18</div>
+<div class="door" id="d19" onclick="openDoor(19)">19</div>
+<div class="door" id="d20" onclick="openDoor(20)">20</div>
+<div class="door" id="d21" onclick="openDoor(21)">21</div>
+<div class="door" id="d22" onclick="openDoor(22)">22</div>
+<div class="door" id="d23" onclick="openDoor(23)">23</div>
+<div class="door" id="d24" onclick="openDoor(24)">24</div>
+
+</div>
+<div id="content"></div>
+<script>
+function openDoor(n){
+  const today=new Date();
+  const day=today.getDate();
+  if(day < n){
+    alert("Erst am "+n+". Dezember geöffnet!");
+    return;
+  }
+  document.getElementById('content').innerHTML='<img src="img_'+String(n).padStart(2,'0')+'.jpeg">';
+}
+</script>
+</body></html>
