@@ -1,47 +1,69 @@
 <!DOCTYPE html>
-<!-- updated -->
-<!-- updated -->
-
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Adventskalender 2025 für Regine</title>
+
 <style>
-body{font-family:sans-serif;background:#f5efe6;text-align:center;}
-.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:20px;}
-.door{background:#8b0000;color:white;padding:20px;border-radius:8px;cursor:pointer;font-size:20px;}
-img{max-width:90%;margin-top:20px;}
+body {
+    font-family: sans-serif;
+    background: #f5efe6;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+.door {
+    background: #8b0000;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+img {
+    max-width: 90%;
+    margin-top: 20px;
+}
 </style>
+
 </head>
 <body>
-<h1>Adventskalender</h1>
+
+<h1>Adventskalender 2025 für Regine</h1>
+
 <div class="grid">
-<div class="door" onclick="openDoor(1)">1</div>
-<div class="door" onclick="openDoor(2)">2</div>
-<div class="door" onclick="openDoor(3)">3</div>
-<div class="door" onclick="openDoor(4)">4</div>
-<div class="door" onclick="openDoor(5)">5</div>
-<div class="door" onclick="openDoor(6)">6</div>
-<div class="door" onclick="openDoor(7)">7</div>
-<div class="door" onclick="openDoor(8)">8</div>
-<div class="door" onclick="openDoor(9)">9</div>
-<div class="door" onclick="openDoor(10)">10</div>
-<div class="door" onclick="openDoor(11)">11</div>
-<div class="door" onclick="openDoor(12)">12</div>
-<div class="door" onclick="openDoor(13)">13</div>
-<div class="door" onclick="openDoor(14)">14</div>
-<div class="door" onclick="openDoor(15)">15</div>
-<div class="door" onclick="openDoor(16)">16</div>
-<div class="door" onclick="openDoor(17)">17</div>
-<div class="door" onclick="openDoor(18)">18</div>
-<div class="door" onclick="openDoor(19)">19</div>
-<div class="door" onclick="openDoor(20)">20</div>
-<div class="door" onclick="openDoor(21)">21</div>
-<div class="door" onclick="openDoor(22)">22</div>
-<div class="door" onclick="openDoor(23)">23</div>
-<div class="door" onclick="openDoor(24)">24</div>
+    <div class="door" onclick="openDoor(1)">1</div>
+    <div class="door" onclick="openDoor(2)">2</div>
+    <div class="door" onclick="openDoor(3)">3</div>
+    <div class="door" onclick="openDoor(4)">4</div>
+    <div class="door" onclick="openDoor(5)">5</div>
+    <div class="door" onclick="openDoor(6)">6</div>
+    <div class="door" onclick="openDoor(7)">7</div>
+    <div class="door" onclick="openDoor(8)">8</div>
+    <div class="door" onclick="openDoor(9)">9</div>
+    <div class="door" onclick="openDoor(10)">10</div>
+    <div class="door" onclick="openDoor(11)">11</div>
+    <div class="door" onclick="openDoor(12)">12</div>
+    <div class="door" onclick="openDoor(13)">13</div>
+    <div class="door" onclick="openDoor(14)">14</div>
+    <div class="door" onclick="openDoor(15)">15</div>
+    <div class="door" onclick="openDoor(16)">16</div>
+    <div class="door" onclick="openDoor(17)">17</div>
+    <div class="door" onclick="openDoor(18)">18</div>
+    <div class="door" onclick="openDoor(19)">19</div>
+    <div class="door" onclick="openDoor(20)">20</div>
+    <div class="door" onclick="openDoor(21)">21</div>
+    <div class="door" onclick="openDoor(22)">22</div>
+    <div class="door" onclick="openDoor(23)">23</div>
+    <div class="door" onclick="openDoor(24)">24</div>
 </div>
+
 <div id="content"></div>
+
 <script>
 const texts = {
   1: "Butterfly Garden, Changi Airport Singapore",
@@ -53,21 +75,21 @@ const texts = {
   7: "La Vallée des Saints, Bretagne",
   8: "Phare de Ploumanac'h, Cote d'Armor Bretagne",
   9: "Les regles de la Maison",
-  10: "Cathedral Cave, Catlins New Zealand",
-  11: "Patti und Sophie, New Zealand",
-  12: "Marina Bay Sands, Singapore",
-  13: "Abendstimmung Singapore",
-  14: "HAPPY BIRTHDAY",
-  15: "auf der Match More, Bodensee",
-  16: "Tiger im Schnee, New Zealand",
-  17: "Cardrona Alpine Resort, New Zealand",
-  18: "Riverton, New Zealand",
-  19: "Hokitika Gorge, New Zealand",
-  20: "Franz Josef Glacier, New Zealand",
-  21: "West Coast, New Zealand",
-  22: "Peninsula, Dunedin New Zealand",
-  23: "Herbststimmung am Bodensee",
-  24: "Frohe Weihnachten meine Liebe, ich denke an Dich"
+ 10: "Cathedral Cave, Catlins New Zealand",
+ 11: "Patti und Sophie, New Zealand",
+ 12: "Marina Bay Sands, Singapore",
+ 13: "Abendstimmung Singapore",
+ 14: "HAPPY BIRTHDAY",
+ 15: "auf der Match More, Bodensee",
+ 16: "Tiger im Schnee, New Zealand",
+ 17: "Cardrona Alpine Resort, New Zealand",
+ 18: "Riverton, New Zealand",
+ 19: "Hokitika Gorge, New Zealand",
+ 20: "Franz Josef Glacier, New Zealand",
+ 21: "West Coast, New Zealand",
+ 22: "Peninsula, Dunedin New Zealand",
+ 23: "Herbststimmung am Bodensee",
+ 24: "Frohe Weihnachten meine Liebe, ich denke an Dich"
 };
 
 function openDoor(n){
@@ -77,11 +99,14 @@ function openDoor(n){
     alert("Erst am " + n + ". Dezember geöffnet!");
     return;
   }
+
   document.getElementById('content').innerHTML =
-    '<img src="img_'+String(n).padStart(2,'0')+'.jpeg"><p style="font-size: 1.4em; margin-top: 15px; text-align: center;">' +
+    '<img src="img_'+String(n).padStart(2,'0')+'.jpeg">' +
+    '<p style="font-size: 1.6em; margin-top: 20px; text-align: center;">' +
     (texts[n] || "") +
     '</p>';
 }
 </script>
+
 </body>
 </html>
